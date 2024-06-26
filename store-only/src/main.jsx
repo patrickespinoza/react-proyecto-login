@@ -4,6 +4,8 @@ import { Toaster } from 'sonner'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom' 
 import LoginPage from './pages/LoginPage'
 import HomePage from './pages/HomePage'
+import ProductsPage from './pages/productsPage'
+import ProductDetailPage from './pages/productDetailPage'
 
 const router = createBrowserRouter([
   {
@@ -16,11 +18,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/productos',
-    element: <p>Productos</p>
+    element: <ProductsPage/>
   },
   {
     path: '/producto/:id',
-    element: <p>Producto</p>
+    element: <ProductDetailPage/>
   }
 ])
 
